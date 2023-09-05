@@ -1,0 +1,132 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Rahmen um die Links */
+  border-radius: 5px;
+  /* Abrundung des Rahmens */
+  text-decoration: none;
+  color: #333;
+}
+
+button:hover {
+  background-color: rgb(131, 169, 250);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  /* Add some top margin for spacing */
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.questions-section {
+  flex-grow: 1;
+  /* Stilisierung für den Bereich der Fragen oder des Inhalts hier */
+}
+
+.questions-container {
+  max-width: 700px;
+  width: 50%;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.question-block {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Stil für die Antwortmöglichkeiten */
+.question-block ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Stil für die richtige Antwort */
+.question-block p:last-child {
+  font-weight: bold;
+}
+
+.question-text{
+  width: 500px;
+  height: 85px;
+  border: 0px;
+  padding: 1em;
+}
+
+.choice-text{
+  width: 500;
+  height: 250px;
+  border: 0px;
+  padding: 1em;
+}
+
+.infoTextBox {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.centered-infoTextBox {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.show-answer-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-answer-button.selected {
+  background-color: rgb(131, 169, 250); /* Hintergrundfarbe für ausgewählten Button */
+  color: #fff; /* Textfarbe für ausgewählten Button */
+}
+
+.show-answer-button:hover {
+  background-color: rgb(131, 169, 250); /* Hintergrundfarbe für gehoverten Button */
+  color: #fff; /* Textfarbe für gehoverten Button */
+}
+
+.answer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.empty-column {
+  width: 200px; /* Breite der leeren Spalte */
+  background-color: #f7f7f7; /* Hintergrundfarbe der leeren Spalte */
+  /* Weitere Stilisierung hier, z. B. Abstand oder Werbung einfügen */
+}
+

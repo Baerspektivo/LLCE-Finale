@@ -1,0 +1,33 @@
+<div class="questions-section">
+  <div class="question-type-buttons">
+    <button class="show-answer-button" mat-button (click)="navigateToFilterPage()">Filter Questions</button>
+  </div>
+
+
+
+  <div class="question-container">
+    <div class="question-block" *ngFor="let question of getKatalog(); let i = index">
+      <h3>Question {{i+1}}</h3>
+      <div class="question-text">{{question.questionText}}</div>
+
+      <div class="choice-text">
+        <ng-container *ngIf="question.questionType === 'single'">
+          <LL-single-choice-question [choices]="question.choices"></LL-single-choice-question>
+        </ng-container>
+
+        <ng-container *ngIf="question.questionType === 'multiple'">
+          <LL-multiple-choice-question [choices]="question.choices"></LL-multiple-choice-question>
+        </ng-container>
+
+        <ng-container *ngIf="question.questionType === 'input'">
+          <LL-input-choice-question
+            [userAnswer]="getTrueFlase().getCurrentAnswers().userAnswer"></LL-input-choice-question>
+        </ng-container>
+      </div>
+
+      <button class="show-answer-button" (click)="getQuestService().toggleAnswerVisibility()">Answer</button>
+      <div class="answer" *ngIf="getQuestService().getShowAnswer()">Right Answer: {{question.answer}}</div>
+    </div>
+  </div>
+
+</div>

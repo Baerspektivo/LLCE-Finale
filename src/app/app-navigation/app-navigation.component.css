@@ -1,0 +1,84 @@
+/* layout.css */
+
+.side-navigation {
+  position: sticky;
+  top: 0;
+  width: 200px; /* Breite der Seitennavigation */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen */
+  padding: 20px 0; /* Vertikaler Abstand oben und unten */
+}
+
+.side-navigation a {
+  display: block;
+  padding: 10px 20px; /* Horizontaler Abstand innen */
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.side-navigation a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px; /* Position des Balkens */
+  transform: translateY(-50%);
+  width: 5px; /* Breite des Balkens */
+  height: 30px; /* Höhe des Balkens */
+  background-color: transparent; /* Anfangs transparent */
+  transition: background-color 0.3s; /* Übergangseffekt hinzufügen */
+}
+
+.side-navigation a.active::after,
+.side-navigation a:hover::after {
+  background-color: #0ca9f193;
+  /* Farbe ändern, wenn aktiv oder bei Hover */
+}
+
+.side-navigation a.active:hover::after {
+  /* Zusätzliche Markierung für aktives Element bei Hover */
+  background-color: #0ca9f193;
+}
+
+/* Zusätzlicher Effekt für geklickte Elemente */
+.side-navigation a.clicked::after {
+  background-color: #0ca9f193;
+}
+
+/* Fügen Sie den Unterpunkten eine zusätzliche Einrückung hinzu */
+.side-navigation .sub-navigation {
+  margin-left: 20px;
+}
+
+.side-navigation .sub-navigation a.active,
+.side-navigation .sub-navigation a:hover {
+  background-color: #0ca9f193;
+}
+
+/* Zusätzlicher Effekt für geklickte Elemente */
+.side-navigation .sub-navigation a.clicked {
+  background-color: #0ca9f193;
+}
+
+/* Fügen Sie den Unterpunkten eine zusätzliche Einrückung hinzu */
+.sub-navigation {
+  margin-left: 20px; /* Hier können Sie den Einrückungsabstand anpassen */
+}
+
+/* Fügen Sie den Unterpunkten eine Hintergrundfarbe hinzu, um sie zu markieren */
+.sub-navigation a {
+  background-color: #f2f2f2; /* Hintergrundfarbe der Unterpunkte */
+  padding-left: 10px; /* Abstand vom linken Rand */
+}
+
+.sub-navigation a.active,
+.sub-navigation a:hover {
+  background-color: #0ca9f193; /* Hintergrundfarbe ändern, wenn aktiv oder bei Hover */
+}
+
+/* Zusätzlicher Effekt für geklickte Elemente */
+.sub-navigation a.clicked {
+  background-color: #0ca9f193; /* Hintergrundfarbe für geklicktes Element */
+}
+

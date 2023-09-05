@@ -1,0 +1,15 @@
+<!-- MultipleChoice -->
+  <div *ngFor="let choice of choices; index as k">
+    <div *ngIf="!choice.selected">
+      <label>
+        <input type="checkbox" (click)="toggleChoiceSelection(choice)" name="choices">
+        {{ choice.text }}
+      </label>
+    </div>
+    <div *ngIf="choice.selected">
+      <label>
+        <input type="checkbox" (click)="toggleChoiceSelection(choice)" name="choices" checked>
+        {{ choice.text }}
+      </label>
+    </div>
+  </div>

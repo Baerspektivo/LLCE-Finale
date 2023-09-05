@@ -1,0 +1,40 @@
+<!--Einzelfragen -->
+<div class="questions-section">
+  <div class="question-container">
+    <div class="question-block" *ngIf="getQuestionNav().getCurrentQuestion()">
+
+      <h3>Question {{getTrueFalse().getCurrentQuestionIndex() + 1 }}</h3>
+
+      <div class="question-text">{{getQuestionNav().getCurrentQuestion().questionText}}</div>
+
+      <div class="choice-text">
+        <ng-container *ngIf="getQuestionNav().getCurrentQuestion().questionType === 'single'">
+          <LL-single-choice-question [choices]="getQuestionNav().getCurrentQuestion().choices"></LL-single-choice-question>
+        </ng-container>
+
+        <ng-container *ngIf="getQuestionNav().getCurrentQuestion().questionType === 'multiple'">
+          <LL-multiple-choice-question [choices]="getQuestionNav().getCurrentQuestion().choices"></LL-multiple-choice-question>
+        </ng-container>
+
+        <ng-container *ngIf="getQuestionNav().getCurrentQuestion().questionType === 'input'">
+          <LL-input-choice-question
+            [userAnswer]="getTrueFalse().getCurrentAnswers().userAnswer"></LL-input-choice-question>
+        </ng-container>
+      </div>
+
+
+        <button class="show-answer-button" (click)="showAnswer = !showAnswer">Answer</button>
+        <div class="answer" *ngIf="showAnswer && getQuestionNav().getCurrentQuestion().answer">
+          Answer: {{getQuestionNav().getCurrentQuestion().answer}}
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="button-container">
+      <button (click)="getQuestionNav().movePreviusQuestion()">Back</button>
+      <button (click)="getQuestionNav().moveNextQuestionWithOutCheck(); showAnswer = false;">Forward</button>
+    </div>

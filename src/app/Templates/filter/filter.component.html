@@ -1,0 +1,37 @@
+
+
+<div class="questions-section">
+  <div class="question-type-buttons">
+
+    <button class="show-answer-button" *ngFor="let type of questionTypes" [class.selected]="selectedKatalog === type" (click)="onTypeButtonClick(type)">{{ type }}</button>
+
+    <div class="button-container">
+      <button class="show-answer-button" [class.selected]="selectedKatalog === 'LPI101'" (click)="selectCatalog('LPI101')">Katalog 1</button>
+
+      <button class="show-answer-button" [class.selected]="selectedKatalog === 'LPI102'"(click)="selectCatalog('LPI102')">Katalog 2</button>
+    </div>
+  </div>
+
+  <div class="question-container">
+    <div class="question-block" *ngFor="let question of filteredQuestions; let i = index">
+      <h3>Question {{i+1}}</h3>
+      <div class="question-text">{{question.questionText}}</div>
+
+      <div class="choice-text">
+        <ng-container *ngIf="question.questionType === 'single'">
+          <LL-single-choice-question [choices]="question.choices"></LL-single-choice-question>
+        </ng-container>
+
+        <ng-container *ngIf="question.questionType === 'multiple'">
+          <LL-multiple-choice-question [choices]="question.choices"></LL-multiple-choice-question>
+        </ng-container>
+
+        <ng-container *ngIf="question.questionType === 'input'">
+          <LL-input-choice-question
+            [userAnswer]="getTrueFalse().getCurrentAnswers().userAnswer"></LL-input-choice-question>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+</div>

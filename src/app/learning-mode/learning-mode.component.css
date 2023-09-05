@@ -1,0 +1,53 @@
+.navigation-links {
+  display: flex;
+  gap: 10px; /* Abstand zwischen den Links */
+}
+
+.centered-navigation {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center; /* Zentrieren der Navigation */
+}
+
+.navigation-links a {
+  padding: 10px;
+  border: 1px solid #ccc; /* Rahmen um die Links */
+  border-radius: 5px; /* Abrundung des Rahmens */
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation-links a.active {
+  background-color: #0ca9f193; /* Hintergrundfarbe für aktiven Link */
+}
+
+.infoTextBox{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.centered-infoTextBox{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.subNavigation-links {
+  display: flex;
+  gap: 50px; /* Abstand zwischen den Links */
+}
+
+.subNavigation-links a {
+  padding: 10px;
+  border: 1px solid #ccc; /* Rahmen um die Links */
+  border-radius: 5px; /* Abrundung des Rahmens */
+  text-decoration: none;
+  color: #333;
+}
+
+.subNavigation-links a.active {
+  background-color: #0ca9f193; /* Hintergrundfarbe für aktiven Link */
+}

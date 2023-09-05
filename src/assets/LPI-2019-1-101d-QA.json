@@ -1,0 +1,3131 @@
+[
+  {
+    "questionNumber": "1",
+    "questionText": "\n\nWhich type of file system is created by mkfs when it is executed with the block device name only and\nwithout any additional parameters?\n\n",
+    "choices": [
+      {
+        "text": "A. XFS",
+        "selected": false
+      },
+      {
+        "text": "B. VFAT",
+        "selected": false
+      },
+      {
+        "text": "C. ext2",
+        "selected": false
+      },
+      {
+        "text": "D. ext3",
+        "selected": false
+      },
+      {
+        "text": "E. ext4",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "\nWhich umask value ensures that new directories can be read, written and listed by their owning user,\nread and listed by their owning group and are not accessible at all for everyone else?\n\n",
+    "choices": [
+      {
+        "text": "A. 0750",
+        "selected": false
+      },
+      {
+        "text": "B. 0027",
+        "selected": false
+      },
+      {
+        "text": "C. 0036",
+        "selected": false
+      },
+      {
+        "text": "D. 7640",
+        "selected": false
+      },
+      {
+        "text": "E. 0029",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "\nWhich of the following commands changes the number of days before the ext3 filesystem on /dev/sda1\nhas to run through a full filesystem check while booting?\n\n",
+    "choices": [
+      {
+        "text": "A. tune2fs -d 200 /dev/sda1",
+        "selected": false
+      },
+      {
+        "text": "B. tune2fs -i 200 /dev/sda1",
+        "selected": false
+      },
+      {
+        "text": "C. tune2fs -c 200 /dev/sda1",
+        "selected": false
+      },
+      {
+        "text": "D. tune2fs -n 200 /dev/sda1",
+        "selected": false
+      },
+      {
+        "text": "E. tune2fs --days 200 /dev/sda1",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "\nWhich is the default percentage of reserved space for the root user on new ext4 filesystems?\n\n",
+    "choices": [
+      {
+        "text": "A. 10%",
+        "selected": false
+      },
+      {
+        "text": "B. 3%",
+        "selected": false
+      },
+      {
+        "text": "C. 15%",
+        "selected": false
+      },
+      {
+        "text": "D. 0%",
+        "selected": false
+      },
+      {
+        "text": "E. 5%",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "\nWhich of the following is true when a file system, which is neither listed in /etc/fstab nor known to system,\nis mounted manually?\n\n",
+    "choices": [
+      {
+        "text": "A. systemd ignores any manual mounts which are not done using the systemctl mount command",
+        "selected": false
+      },
+      {
+        "text": "B. The command systemctl mountsync can be used to create a mount unit based on the existing mount",
+        "selected": false
+      },
+      {
+        "text": "C. systemd automatically generates a mount unit and monitors the mount point without changing it",
+        "selected": false
+      },
+      {
+        "text": "D. Unless a systemd mount unit is created, systemd unmounts the file system after a short period of time",
+        "selected": false
+      },
+      {
+        "text": "E. systemctl unmount must be used to remove the mount because system opens a file descriptor on the mount point",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "\nWhich program updates the database that is used by the locate command? (Specify ONLY the command\nwithout any path or parameters).\n\n",
+    "choices": [],
+    "answer": "updatedb",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "7",
+    "questionText": "\nWhat does the command mount --bind do?\n\n",
+    "choices": [
+      {
+        "text": "A. It makes the contents of one directory available in another directory",
+        "selected": false
+      },
+      {
+        "text": "B. It mounts all available filesystems to the current directory",
+        "selected": false
+      },
+      {
+        "text": "C. It mounts all user mountable filesystems to the user’s home directory",
+        "selected": false
+      },
+      {
+        "text": "D. It mounts all file systems listed in /etc/fstab which have the option userbindset",
+        "selected": false
+      },
+      {
+        "text": "E. It permanently mounts a regular file to a directory",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "8",
+    "questionText": "\nConsider the following output from the command ls -i:\n 525385 a.txt\nHow would a new file named c.txt be created with the same inode number as a.txt (Inode 525385)?\n\n",
+    "choices": [
+      {
+        "text": "A. ln -h a.txt c.txt",
+        "selected": false
+      },
+      {
+        "text": "B. ln c.txt a.txt",
+        "selected": false
+      },
+      {
+        "text": "C. ln a.txt c.txt",
+        "selected": false
+      },
+      {
+        "text": "D. ln -f c.txt a.txt",
+        "selected": false
+      },
+      {
+        "text": "E. ln -i 525385 c.txt",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "9",
+    "questionText": "\nConsider the following directory:\n drwxrwxr-x 2 root sales 4096 Jan 1 15:21 sales\nWhich command ensures new files created within the directory sales are owned by the group sales?\n(Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. chmod g+s sales",
+        "selected": false
+      },
+      {
+        "text": "B. setpol -R newgroup=sales sales",
+        "selected": false
+      },
+      {
+        "text": "C. chgrp -p sales sales",
+        "selected": false
+      },
+      {
+        "text": "D. chown --persistent *.sales sales",
+        "selected": false
+      },
+      {
+        "text": "E. chmod 2775 sales",
+        "selected": false
+      }
+    ],
+    "answer": "AE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "10",
+    "questionText": "\nIn order to display all currently mounted filesystems, which of the following commands could be used?\n(Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. cat /proc/self/mounts",
+        "selected": false
+      },
+      {
+        "text": "B. free",
+        "selected": false
+      },
+      {
+        "text": "C. lsmounts",
+        "selected": false
+      },
+      {
+        "text": "D. mount",
+        "selected": false
+      },
+      {
+        "text": "E. cat /proc/filesystems",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "11",
+    "questionText": "\nWhich command displays the current disk space usage for all mounted file systems? (Specify ONLY the\ncommand without any path or parameters.)\n\n",
+    "choices": [],
+    "answer": "df",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "12",
+    "questionText": "\nWhich chown command changes the ownership to dave and the group to staff on a file named\ndata.txt?\n\n",
+    "choices": [
+      {
+        "text": "A. chown dave/staff data.txt",
+        "selected": false
+      },
+      {
+        "text": "B. chown -u dave -g staff data.txt",
+        "selected": false
+      },
+      {
+        "text": "C. chown --user dave --group staff data.txt",
+        "selected": false
+      },
+      {
+        "text": "D. chown dave+staff data.txt",
+        "selected": false
+      },
+      {
+        "text": "E. chown dave:staff data.txt",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "13",
+    "questionText": "\nWhen considering the use of hard links, what are valid reasons not to use hard links?\n\n",
+    "choices": [
+      {
+        "text": "A. Hard links are not available on all Linux systems because traditional filesystems, such as ext4, do not support them",
+        "selected": false
+      },
+      {
+        "text": "B. Each hard link has individual ownership, permissions and ACLs which can lead to unintended disclosure of file content",
+        "selected": false
+      },
+      {
+        "text": "C. Hard links are specific to one filesystem and cannot point to files on another filesystem",
+        "selected": false
+      },
+      {
+        "text": "D. If users other than root should be able to create hard links, suln has to be installed and configured",
+        "selected": false
+      },
+      {
+        "text": "E. When a hard linked file is changed, a copy of the file is created and consumes additional space",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "14",
+    "questionText": "\nIn compliance with the FHS, in which of the directories are man pages found?\n\n",
+    "choices": [
+      {
+        "text": "A. /opt/man/",
+        "selected": false
+      },
+      {
+        "text": "B. /usr/doc/",
+        "selected": false
+      },
+      {
+        "text": "C. /usr/share/man/",
+        "selected": false
+      },
+      {
+        "text": "D. /var/pkg/man",
+        "selected": false
+      },
+      {
+        "text": "E. /var/man/",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "15",
+    "questionText": "\nWhich file in the /proc filesystem lists parameters passed from the bootloader to the kernel? (Specify the\nfile name only without any path.)\n\n",
+    "choices": [],
+    "answer": "cmdline",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "16",
+    "questionText": "\nWhat is the process ID number of the init process on a System V init based system?\n\n",
+    "choices": [
+      {
+        "text": "A. -1",
+        "selected": false
+      },
+      {
+        "text": "B. 0",
+        "selected": false
+      },
+      {
+        "text": "C. 1",
+        "selected": false
+      },
+      {
+        "text": "D. It is different with each reboot",
+        "selected": false
+      },
+      {
+        "text": "E. It is set to the current run level",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "17",
+    "questionText": "\nWhich daemon handles power management events on a Linux system?\n\n",
+    "choices": [
+      {
+        "text": "A. acpid",
+        "selected": false
+      },
+      {
+        "text": "B. batteryd",
+        "selected": false
+      },
+      {
+        "text": "C. pwrmgntd",
+        "selected": false
+      },
+      {
+        "text": "D. psd",
+        "selected": false
+      },
+      {
+        "text": "E. inetd",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "18",
+    "questionText": "\nWhich of the following statements are true about the boot sequence of a PC using a BIOS? (Choose\ntwo.)\n\n",
+    "choices": [
+      {
+        "text": "A. Some parts of the boot process can be configured from the BIOS",
+        "selected": false
+      },
+      {
+        "text": "B. Linux does not require the assistance of the BIOS to boot a computer",
+        "selected": false
+      },
+      {
+        "text": "C. The BIOS boot process starts only if secondary storage, such as the hard disk, is functional",
+        "selected": false
+      },
+      {
+        "text": "D. The BIOS initiates the boot process after turning the computer on",
+        "selected": false
+      },
+      {
+        "text": "E. The BIOS is started by loading hardware drivers from secondary storage, such as the hard disk",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "19",
+    "questionText": "\nWhat is true regarding UEFI firmware? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. It can read and interpret partition tables",
+        "selected": false
+      },
+      {
+        "text": "B. It can use and read certain file systems",
+        "selected": false
+      },
+      {
+        "text": "C. It stores its entire configuration on the /boot/ partition",
+        "selected": false
+      },
+      {
+        "text": "D. It is stored in a special area within the GPT metadata",
+        "selected": false
+      },
+      {
+        "text": "E. It is loaded from a fixed boot disk position",
+        "selected": false
+      }
+    ],
+    "answer": "AB",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "20",
+    "questionText": "\nA faulty kernel module is causing issues with a network interface card.\nWhich of the following actions ensures that this module is not loaded automatically when the system\nboots?\n\n",
+    "choices": [
+      {
+        "text": "A. Using lsmod --remove --autocleanwithout specifying the name of a specific module",
+        "selected": false
+      },
+      {
+        "text": "B. Using modinfo -kfollowed by the name of the offending module",
+        "selected": false
+      },
+      {
+        "text": "C. Using modprobe -rfollowed by the name of the offending module",
+        "selected": false
+      },
+      {
+        "text": "D. Adding a blacklist line including the name of the offending module to the file /etc/modprobe.d/blacklist.conf",
+        "selected": false
+      },
+      {
+        "text": "E. Deleting the kernel module’s directory from the file system and recompiling the kernel, including its modules",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "21",
+    "questionText": "\nWhen is the content of the kernel ring buffer reset? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. When the ring buffer is explicitly reset using the command dmesg --clear",
+        "selected": false
+      },
+      {
+        "text": "B. When the ring buffer is read using dmesg without any additional parameters",
+        "selected": false
+      },
+      {
+        "text": "C. When a configurable amount of time, 15 minutes by default, has passed",
+        "selected": false
+      },
+      {
+        "text": "D. When the kernel loads a previously unloaded kernel module",
+        "selected": false
+      },
+      {
+        "text": "E. When the system is shut down or rebooted",
+        "selected": false
+      }
+    ],
+    "answer": "AE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "22",
+    "questionText": "\nWhat is the first program the Linux kernel starts at boot time when using System V init?\n\n",
+    "choices": [
+      {
+        "text": "A. /lib/init.so",
+        "selected": false
+      },
+      {
+        "text": "B. /proc/sys/kernel/init",
+        "selected": false
+      },
+      {
+        "text": "C. /etc/rc.d/rcinit",
+        "selected": false
+      },
+      {
+        "text": "D. /sbin/init",
+        "selected": false
+      },
+      {
+        "text": "E. /boot/init",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "23",
+    "questionText": "\nA Debian package creates several files during its installation.\nWhich of the following commands searches for packages owning the file /etc/debian_version?\n\n",
+    "choices": [
+      {
+        "text": "A. apt-get search /etc/debian_version",
+        "selected": false
+      },
+      {
+        "text": "B. apt -r /etc/debian_version",
+        "selected": false
+      },
+      {
+        "text": "C. find /etc/debian_version -dpkg",
+        "selected": false
+      },
+      {
+        "text": "D. dpkg -S  /etc/debian_version",
+        "selected": false
+      },
+      {
+        "text": "E. apt-file /etc/debian_version",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "24",
+    "questionText": "\nWhat is contained on the EFI System Partition?\n\n",
+    "choices": [
+      {
+        "text": "A. The Linux root file system",
+        "selected": false
+      },
+      {
+        "text": "B. The first stage boot loader",
+        "selected": false
+      },
+      {
+        "text": "C. The default swap space file",
+        "selected": false
+      },
+      {
+        "text": "D. The Linux default shell binaries",
+        "selected": false
+      },
+      {
+        "text": "E. The user home directories",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "25",
+    "questionText": "\nWhich of the following directories on a 64 bit Linux system typically contain shared libraries? (Choose\ntwo.)\n\n",
+    "choices": [
+      {
+        "text": "A. ~/.lib64/",
+        "selected": false
+      },
+      {
+        "text": "B. /usr/lib64/",
+        "selected": false
+      },
+      {
+        "text": "C. /var/lib64/",
+        "selected": false
+      },
+      {
+        "text": "D. /lib64/",
+        "selected": false
+      },
+      {
+        "text": "E. /opt/lib64/",
+        "selected": false
+      }
+    ],
+    "answer": "BD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "26",
+    "questionText": "\nWhich of the following files exist in a standard GRUB 2 installation? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. /boot/grub/stages/stage0",
+        "selected": false
+      },
+      {
+        "text": "B. /boot/grub/i386-pc/lvm.mod",
+        "selected": false
+      },
+      {
+        "text": "C. /boot/grub/fstab",
+        "selected": false
+      },
+      {
+        "text": "D. /boot/grub/grub.cfg",
+        "selected": false
+      },
+      {
+        "text": "E. /boot/grub/linux/vmlinuz",
+        "selected": false
+      }
+    ],
+    "answer": "BD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "27",
+    "questionText": "\nWhich of the following commands installs all packages with a name ending with the string foo?\n\n",
+    "choices": [
+      {
+        "text": "A. zypper get \"*foo\"",
+        "selected": false
+      },
+      {
+        "text": "B. zypper update \"foo?\"",
+        "selected": false
+      },
+      {
+        "text": "C. zypper force \"foo*\"",
+        "selected": false
+      },
+      {
+        "text": "D. zypper install \"*foo\"",
+        "selected": false
+      },
+      {
+        "text": "E. zypper add \".*foo\"",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "28",
+    "questionText": "\nWhich of the following properties of a Linux system should be changed when a virtual machine is\ncloned? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. The partitioning scheme",
+        "selected": false
+      },
+      {
+        "text": "B. The file system",
+        "selected": false
+      },
+      {
+        "text": "C. The D-Bus Machine ID",
+        "selected": false
+      },
+      {
+        "text": "D. The permissions of /root/",
+        "selected": false
+      },
+      {
+        "text": "E. The SSH host keys",
+        "selected": false
+      }
+    ],
+    "answer": "CE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "29",
+    "questionText": "\nWhich of the following commands installs GRUB 2 into the master boot record on the third hard disk?\n\n",
+    "choices": [
+      {
+        "text": "A. grub2 install /dev/sdc",
+        "selected": false
+      },
+      {
+        "text": "B. grub-mkrescue /dev/sdc",
+        "selected": false
+      },
+      {
+        "text": "C. grub-mbrinstall /dev/sdc",
+        "selected": false
+      },
+      {
+        "text": "D. grub-setup /dev/sdc",
+        "selected": false
+      },
+      {
+        "text": "E. grub-install /dev/sdc",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "30",
+    "questionText": "\nWhich of the following partition types is used for Linux swap spaces when partitioning hard disk\ndrives?\n\n",
+    "choices": [
+      {
+        "text": "A. 7",
+        "selected": false
+      },
+      {
+        "text": "B. 82",
+        "selected": false
+      },
+      {
+        "text": "C. 83",
+        "selected": false
+      },
+      {
+        "text": "D. 8e",
+        "selected": false
+      },
+      {
+        "text": "E. fd",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "31",
+    "questionText": "\nWhat is true regarding the configuration of yum? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. Changes to the repository configuration become active after running yum confupdate",
+        "selected": false
+      },
+      {
+        "text": "B. Changes to the yum configuration become active after restarting the yumd service",
+        "selected": false
+      },
+      {
+        "text": "C. The configuration of package repositories can be divided into multiple files",
+        "selected": false
+      },
+      {
+        "text": "D. Repository configurations can include variables such as $basearch or $releasever",
+        "selected": false
+      },
+      {
+        "text": "E. In case /etc/yum.repos.d/ contains files, /etc/yum.config ignored",
+        "selected": false
+      }
+    ],
+    "answer": "CD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "32",
+    "questionText": "\nWhich of the following apt-get subcommands installs the newest versions of all currently installed\npackages?\n\n",
+    "choices": [
+      {
+        "text": "A. auto-update",
+        "selected": false
+      },
+      {
+        "text": "B. dist-upgrade",
+        "selected": false
+      },
+      {
+        "text": "C. full-upgrade",
+        "selected": false
+      },
+      {
+        "text": "D. install",
+        "selected": false
+      },
+      {
+        "text": "E. update",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "33",
+    "questionText": "\nWhich command uninstalls a package but keeps its configuration files in case the package is\nre-installed?\n\n",
+    "choices": [
+      {
+        "text": "A. dpkg -s pkgname",
+        "selected": false
+      },
+      {
+        "text": "B. dpkg -L pkgname",
+        "selected": false
+      },
+      {
+        "text": "C. dpkg -P pkgname",
+        "selected": false
+      },
+      {
+        "text": "D. dpkg -v pkgname",
+        "selected": false
+      },
+      {
+        "text": "E. dpkg -r pkgname",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "34",
+    "questionText": "\nWhich of the following commands lists the dependencies of the RPM package file foo.rpm?\n\n",
+    "choices": [
+      {
+        "text": "A. rpm -qpR foo.rpm",
+        "selected": false
+      },
+      {
+        "text": "B. rpm -dep foo",
+        "selected": false
+      },
+      {
+        "text": "C. rpm -ld foo.rpm",
+        "selected": false
+      },
+      {
+        "text": "D. rpm -R foo.rpm",
+        "selected": false
+      },
+      {
+        "text": "E. rpm -pD foo",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "35",
+    "questionText": "\nWhat is the maximum niceness value that a regular user can assign to a process with the nice\ncommand when executing a new process?\n\n",
+    "choices": [
+      {
+        "text": "A. 9",
+        "selected": false
+      },
+      {
+        "text": "B. 15",
+        "selected": false
+      },
+      {
+        "text": "C. 19",
+        "selected": false
+      },
+      {
+        "text": "D. 49",
+        "selected": false
+      },
+      {
+        "text": "E. 99",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "36",
+    "questionText": "\nWhich of the following commands list all files and directories within the /tmp/ directory and its\nsubdirectories which are owned by the user root? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. find /tmp -user root -print",
+        "selected": false
+      },
+      {
+        "text": "B. find -path /tmp -uid root",
+        "selected": false
+      },
+      {
+        "text": "C. find /tmp -uid root -print",
+        "selected": false
+      },
+      {
+        "text": "D. find /tmp -user root",
+        "selected": false
+      },
+      {
+        "text": "E. find -path /tmp -user root -print",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "37",
+    "questionText": "\nWhich of the following are valid stream redirection operators within Bash? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. <",
+        "selected": false
+      },
+      {
+        "text": "B. #>",
+        "selected": false
+      },
+      {
+        "text": "C. %>",
+        "selected": false
+      },
+      {
+        "text": "D. >>>",
+        "selected": false
+      },
+      {
+        "text": "E. 2>&1",
+        "selected": false
+      }
+    ],
+    "answer": "AE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "38",
+    "questionText": "\nWhich of the following vi commands deletes two lines, the current and the following line?\n\n",
+    "choices": [
+      {
+        "text": "A. d2",
+        "selected": false
+      },
+      {
+        "text": "B. 2d",
+        "selected": false
+      },
+      {
+        "text": "C. 2dd",
+        "selected": false
+      },
+      {
+        "text": "D. dd2",
+        "selected": false
+      },
+      {
+        "text": "E. de12",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "39",
+    "questionText": "\nThe command dbmaint & was used to run dbmaint in the background.\nHowever, dbmaint is terminated after logging out of the system.\nWhich alternative dbmaint invocation lets dbmaint continue to run, even when the user, running the\nprogram, logs out?\n\n",
+    "choices": [
+      {
+        "text": "A. job -b dmaint",
+        "selected": false
+      },
+      {
+        "text": "B. dbmaint &>/dev/pts/null",
+        "selected": false
+      },
+      {
+        "text": "C. nohup dbmaint &",
+        "selected": false
+      },
+      {
+        "text": "D. bg dbmaint",
+        "selected": false
+      },
+      {
+        "text": "E. wait dbmaint",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "40",
+    "questionText": "\nFrom a Bash shell, which of the following commands directly execute the instructions from the file\n/usr/local/bin/runme.sh without starting a subshell? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. source /usr/local/bin/runme.sh",
+        "selected": false
+      },
+      {
+        "text": "B. /usr/local/bin/runme.sh",
+        "selected": false
+      },
+      {
+        "text": "C. /bin/bash /usr/local/bin/runme.sh",
+        "selected": false
+      },
+      {
+        "text": "D. .  /usr/local/bin/runme.sh",
+        "selected": false
+      },
+      {
+        "text": "E. run /usr/local/bin/runme.sh",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "41",
+    "questionText": "\nWhich program runs a command in specific intervals and refreshes the display of the program’s output?\n(Specify ONLY the command without any path or parameters.)\n\n",
+    "choices": [],
+    "answer": "watch",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "42",
+    "questionText": "\nImmediately after deleting 3 lines of text in vi and moving the cursor to a different line, which single\ncharacter command will insert the deleted content below the current line?\n\n",
+    "choices": [
+      {
+        "text": "A. i (lowercase)",
+        "selected": false
+      },
+      {
+        "text": "B. p (lowercase)",
+        "selected": false
+      },
+      {
+        "text": "C. P (uppercase)",
+        "selected": false
+      },
+      {
+        "text": "D. U (uppercase)",
+        "selected": false
+      },
+      {
+        "text": "E. u (lowercase)",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "43",
+    "questionText": "\nWhich of the following commands changes all CR-LF line breaks in the text file userlist.txt to Linux\nstandard LF line breaks and stores the result in newlist.txt?\n\n",
+    "choices": [
+      {
+        "text": "A. tr -d '\\r' < userlist.txt > newlist.txt",
+        "selected": false
+      },
+      {
+        "text": "B. tr -c '\\n\\r' '' <newlist.txt> userlist.txt",
+        "selected": false
+      },
+      {
+        "text": "C. tr '\\r\\n' '' <userlist.txt> newlist.txt",
+        "selected": false
+      },
+      {
+        "text": "D. tr '\\r' '\\n' userlist.txt newlist.txt",
+        "selected": false
+      },
+      {
+        "text": "E. tr -s '/^M/^J/' userlist.txt newlist.txt",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "44",
+    "questionText": "\nGiven the following input stream:\n txt1.txt \n atxt.txt \n txtB.txt\nWhich of the following regular expressions turns this input stream into the following output stream?\n txt1.bak.txt \n atxt.bak.txt \n txtB.bak.txt\n\n",
+    "choices": [
+      {
+        "text": "A. s/^.txt/.bak/",
+        "selected": false
+      },
+      {
+        "text": "B. s/txt/bak.txt/",
+        "selected": false
+      },
+      {
+        "text": "C. s/txt$/bak.txt/",
+        "selected": false
+      },
+      {
+        "text": "D. s/^txt$/.bak^/",
+        "selected": false
+      },
+      {
+        "text": "E. s/[.txt]/.bak$1/",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "45",
+    "questionText": "\nWhich command must be entered before exiting vi to save the current file as filea.txt?\n\n",
+    "choices": [
+      {
+        "text": "A. %s filea.txt",
+        "selected": false
+      },
+      {
+        "text": "B. %w filea.txt",
+        "selected": false
+      },
+      {
+        "text": "C. :save filea.txt",
+        "selected": false
+      },
+      {
+        "text": "D. :w filea.txt",
+        "selected": false
+      },
+      {
+        "text": "E. :s filea.txt",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "46",
+    "questionText": "\nWhich of the following signals is sent to a process when the key combination Ctrl+C is pressed on the\nkeyboard?\n\n",
+    "choices": [
+      {
+        "text": "A. SIGTERM",
+        "selected": false
+      },
+      {
+        "text": "B. SIGCONT",
+        "selected": false
+      },
+      {
+        "text": "C. SIGSTOP",
+        "selected": false
+      },
+      {
+        "text": "D. SIGKILL",
+        "selected": false
+      },
+      {
+        "text": "E. SIGINT",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "47",
+    "questionText": "\nWhich of the following commands displays the output of the foo command on the screen and also\nwrites it to a file called /tmp/foodata?\n\n",
+    "choices": [
+      {
+        "text": "A. foo | less /tmp/foodata",
+        "selected": false
+      },
+      {
+        "text": "B. foo | cp /tmp/foodata",
+        "selected": false
+      },
+      {
+        "text": "C. foo > /tmp/foodata",
+        "selected": false
+      },
+      {
+        "text": "D. foo | tee /tmp/foodata",
+        "selected": false
+      },
+      {
+        "text": "E. foo > stdout >> /tmp/foodata",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "48",
+    "questionText": "\nWhat output will be displayed when the user fred executes the following command?\n  echo 'fred $USER’\n\n",
+    "choices": [
+      {
+        "text": "A. fred fred",
+        "selected": false
+      },
+      {
+        "text": "B. fred /home/fred/",
+        "selected": false
+      },
+      {
+        "text": "C. 'fred $USER’",
+        "selected": false
+      },
+      {
+        "text": "D. fred $USER",
+        "selected": false
+      },
+      {
+        "text": "E. 'fred fred’",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "49",
+    "questionText": "\nWhich of the following commands displays the path to the executable file that would be executed when\nthe command foo is invoked?\n\n",
+    "choices": [
+      {
+        "text": "A. lsattr foo",
+        "selected": false
+      },
+      {
+        "text": "B. apropos foo",
+        "selected": false
+      },
+      {
+        "text": "C. locate foo",
+        "selected": false
+      },
+      {
+        "text": "D. whatis foo",
+        "selected": false
+      },
+      {
+        "text": "E. which foo",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "50",
+    "questionText": "\nWhen redirecting the output of find to the xargs command, what option to find is useful if the filenames\ncontain spaces?\n\n",
+    "choices": [
+      {
+        "text": "A. -rep-space",
+        "selected": false
+      },
+      {
+        "text": "B. -printnul",
+        "selected": false
+      },
+      {
+        "text": "C. -nospace",
+        "selected": false
+      },
+      {
+        "text": "D. -ignore-space",
+        "selected": false
+      },
+      {
+        "text": "E. -print0",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "51",
+    "questionText": "\nWhich of the following commands can be used to determine how long the system has been running?\n(Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. uptime",
+        "selected": false
+      },
+      {
+        "text": "B. up",
+        "selected": false
+      },
+      {
+        "text": "C. time --up",
+        "selected": false
+      },
+      {
+        "text": "D. uname -u",
+        "selected": false
+      },
+      {
+        "text": "E. top",
+        "selected": false
+      }
+    ],
+    "answer": "AE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "52",
+    "questionText": "\nWhat is true regarding the command\n  ls > files \nif files does not exist?\n\n",
+    "choices": [
+      {
+        "text": "A. The output of ls is printed to the terminal",
+        "selected": false
+      },
+      {
+        "text": "B. files is created and contains the output of ls",
+        "selected": false
+      },
+      {
+        "text": "C. An error message is shown and ls is not executed",
+        "selected": false
+      },
+      {
+        "text": "D. The command files is executed and receives the output of ls",
+        "selected": false
+      },
+      {
+        "text": "E. Any output of ls is discarded",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "53",
+    "questionText": "\nWhich of the following files, located in a user’s home directory, contains the Bash history?\n\n",
+    "choices": [
+      {
+        "text": "A. .bashrc_history",
+        "selected": false
+      },
+      {
+        "text": "B. .bash_histfile",
+        "selected": false
+      },
+      {
+        "text": "C. .history",
+        "selected": false
+      },
+      {
+        "text": "D. .bash_history",
+        "selected": false
+      },
+      {
+        "text": "E. .history_bash",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "54",
+    "questionText": "\nWhich wildcards will match the following filenames? (Choose two.)\n ttyS0\n ttyS1\n ttyS2\n\n",
+    "choices": [
+      {
+        "text": "A. ttyS[1-5]",
+        "selected": false
+      },
+      {
+        "text": "B. tty?[0-5]",
+        "selected": false
+      },
+      {
+        "text": "C. tty*2",
+        "selected": false
+      },
+      {
+        "text": "D. tty[A-Z][012]",
+        "selected": false
+      },
+      {
+        "text": "E. tty[Ss][02]",
+        "selected": false
+      }
+    ],
+    "answer": "BD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "55",
+    "questionText": "\nWhich of the following commands redirects the output of ls to standard error?\n\n",
+    "choices": [
+      {
+        "text": "A. ls >-1",
+        "selected": false
+      },
+      {
+        "text": "B. ls <<ERR",
+        "selected": false
+      },
+      {
+        "text": "C. ls >&2",
+        "selected": false
+      },
+      {
+        "text": "D. ls >>2",
+        "selected": false
+      },
+      {
+        "text": "E. ls |error",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "56",
+    "questionText": "\nWhich of the following commands displays the contents of a gzip compressed tar archive?\n\n",
+    "choices": [
+      {
+        "text": "A. gzip archive.tgz | tar xvf",
+        "selected": false
+      },
+      {
+        "text": "B. tar -fzt archive.tgz",
+        "selected": false
+      },
+      {
+        "text": "C. gzip -d archive.tgz | tar tvf",
+        "selected": false
+      },
+      {
+        "text": "D. tar cf archive.tgz",
+        "selected": false
+      },
+      {
+        "text": "E. tar ztf archive.tgz",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "57",
+    "questionText": "\nWhich of the following commands prints a list of usernames (first column) and their primary group\n(fourth column) from the /etc/passwd file?\n\n",
+    "choices": [
+      {
+        "text": "A. fmt -f 1,4 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "B. cut -d : -f 1,4 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "C. sort -t : -k 1,4 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "D. paste -f 1,4 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "E. split -c 1,4 /etc/passwd",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "58",
+    "questionText": "\nWhich of the following regular expressions represents a single upper-case letter?\n\n",
+    "choices": [
+      {
+        "text": "A. :UPPER:",
+        "selected": false
+      },
+      {
+        "text": "B. [A-Z]",
+        "selected": false
+      },
+      {
+        "text": "C. !a-z",
+        "selected": false
+      },
+      {
+        "text": "D. %C",
+        "selected": false
+      },
+      {
+        "text": "E. {AZ}",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "59",
+    "questionText": "\nWhich command is used to start another command with a given nice level? (Specify ONLY the command\nwithout any path or parameters.)\n\n",
+    "choices": [],
+    "answer": "nice",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "60",
+    "questionText": "\nGiven a log file loga.log with timestamps of the format DD/MM/YYYY:hh:mm:ss, which command filters\nout all log entries in the time period between 8:00 am and 8:59 am?\n\n",
+    "choices": [
+      {
+        "text": "A. grep -E ':08:[09]+:[09]+’ loga.log",
+        "selected": false
+      },
+      {
+        "text": "B. grep -E ':08:[00]+’ loga.log",
+        "selected": false
+      },
+      {
+        "text": "C. grep -E loga.log ':08:[0-9]+:[0-9]+’",
+        "selected": false
+      },
+      {
+        "text": "D. grep loga.log ':08:[0-9]:[0-9]’",
+        "selected": false
+      },
+      {
+        "text": "E. grep -E ':08:[0-9]+:[0-9]+’ loga.log",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "61",
+    "questionText": "\nInstead of supplying an explicit device in /etc/fstab for mounting, what other options may be used to\nidentify the intended partition? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. LABEL",
+        "selected": false
+      },
+      {
+        "text": "B. ID",
+        "selected": false
+      },
+      {
+        "text": "C. FIND",
+        "selected": false
+      },
+      {
+        "text": "D. NAME",
+        "selected": false
+      },
+      {
+        "text": "E. UUID",
+        "selected": false
+      }
+    ],
+    "answer": "AE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "62",
+    "questionText": "\nA yum repository can declare sets of related packages.\nWhich yum command installs all packages belonging to the group admintools?\n\n",
+    "choices": [
+      {
+        "text": "A. yum pkgsel --install admintools",
+        "selected": false
+      },
+      {
+        "text": "B. yum install admintools/*",
+        "selected": false
+      },
+      {
+        "text": "C. yum groupinstall admintools",
+        "selected": false
+      },
+      {
+        "text": "D. yum taskinstall admintools",
+        "selected": false
+      },
+      {
+        "text": "E. yum collection install admintools",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "63",
+    "questionText": "\nWhat directory contains configuration files for additional yum repositories? (Specify the full path to the\ndirectory.)\n\n",
+    "choices": [],
+    "answer": "/etc/yum.repos.d",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "64",
+    "questionText": "\nWhich of the following commands installs the GRUB boot files into the currently active file systems and\nthe boot loader into the first partition of the first disk?\n\n",
+    "choices": [
+      {
+        "text": "A. grub-install /dev/sda",
+        "selected": false
+      },
+      {
+        "text": "B. grub-install /dev/sda1",
+        "selected": false
+      },
+      {
+        "text": "C. grub-install current /dev/sda0",
+        "selected": false
+      },
+      {
+        "text": "D. grub-install /dev/sda0",
+        "selected": false
+      },
+      {
+        "text": "E. grub-install current /dev/sda1",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "65",
+    "questionText": "\nWhich of the following files are found in the /boot/ filesystem? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. Linux kernel images",
+        "selected": false
+      },
+      {
+        "text": "B. Bash shell binaries",
+        "selected": false
+      },
+      {
+        "text": "C. systemd target and service units",
+        "selected": false
+      },
+      {
+        "text": "D. Initial ramdisk images",
+        "selected": false
+      },
+      {
+        "text": "E. fsck binaries",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "66",
+    "questionText": "\nWhich file defines the network locations from where the Debian package manager downloads software\npackages?\n\n",
+    "choices": [
+      {
+        "text": "A. /etc/dpkg/dpkg.cfg",
+        "selected": false
+      },
+      {
+        "text": "B. /etc/apt/apt.conf.d",
+        "selected": false
+      },
+      {
+        "text": "C. /etc/apt/apt.conf",
+        "selected": false
+      },
+      {
+        "text": "D. /etc/dpkg/dselect.cfg",
+        "selected": false
+      },
+      {
+        "text": "E. /etc/apt/sources.list",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "67",
+    "questionText": "\nWhen removing a package on a system using dpkg package management, which dpkg option ensures\nconfiguration files are removed as well?\n\n",
+    "choices": [
+      {
+        "text": "A. --clean",
+        "selected": false
+      },
+      {
+        "text": "B. --purge",
+        "selected": false
+      },
+      {
+        "text": "C. --vacuum",
+        "selected": false
+      },
+      {
+        "text": "D. --remove",
+        "selected": false
+      },
+      {
+        "text": "E. --declare",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "68",
+    "questionText": "\nWhich of the following statements are correct when comparing Linux containers with traditional virtual\nmachines (e.g. LXC vs. KVM)? (Choose three.)\n\n",
+    "choices": [
+      {
+        "text": "A. Containers are a lightweight virtualization method where the kernel controls process isolation and resource management.",
+        "selected": false
+      },
+      {
+        "text": "B. Fully virtualized machines can run any operating system for a specific hardware architecture within the virtual machine.",
+        "selected": false
+      },
+      {
+        "text": "C. Containers are completely decoupled from the host system’s physical hardware and can only use emulated virtual hardware devices.",
+        "selected": false
+      },
+      {
+        "text": "D. The guest environment for fully virtualized machines is created by a hypervisor which provides virtual and emulated hardware devices.",
+        "selected": false
+      },
+      {
+        "text": "E. Containers on the same host can use different operating systems, as the container hypervisor creates separate kernel execution.",
+        "selected": false
+      }
+    ],
+    "answer": "ABD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "69",
+    "questionText": "\nThe installation of a local Debian package failed due to unsatisfied dependencies.\nWhich of the following commands installs missing dependencies and completes the interrupted package\ninstallation?\n\n",
+    "choices": [
+      {
+        "text": "A. dpkg --fix --all",
+        "selected": false
+      },
+      {
+        "text": "B. apt-get autoinstall",
+        "selected": false
+      },
+      {
+        "text": "C. dpkg-reconfigure --all",
+        "selected": false
+      },
+      {
+        "text": "D. apt-get all",
+        "selected": false
+      },
+      {
+        "text": "E. apt-get install -f",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "70",
+    "questionText": "\nWhich of the following commands lists all currently installed packages when using RPM package\nmanagement?\n\n",
+    "choices": [
+      {
+        "text": "A. yum --query --all",
+        "selected": false
+      },
+      {
+        "text": "B. yum --list --installed",
+        "selected": false
+      },
+      {
+        "text": "C. rpm --query --list",
+        "selected": false
+      },
+      {
+        "text": "D. rpm --list --installed",
+        "selected": false
+      },
+      {
+        "text": "E. rpm --query --all",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "71",
+    "questionText": "\nWhich of the following commands are valid in the GRUB 2 configuration file? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. menuentry",
+        "selected": false
+      },
+      {
+        "text": "B. uefi",
+        "selected": false
+      },
+      {
+        "text": "C. pxe-ifconfig",
+        "selected": false
+      },
+      {
+        "text": "D. insmod",
+        "selected": false
+      },
+      {
+        "text": "E. kpartx",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "72",
+    "questionText": "\nWhat is the purpose of the ldd command?\n\n",
+    "choices": [
+      {
+        "text": "A. It lists which shared libraries a binary needs to run.",
+        "selected": false
+      },
+      {
+        "text": "B. It installs and updates installed shared libraries.",
+        "selected": false
+      },
+      {
+        "text": "C. It turns a dynamically linked binary into a static binary.",
+        "selected": false
+      },
+      {
+        "text": "D. It defines which version of a library should be used by default.",
+        "selected": false
+      },
+      {
+        "text": "E. It runs a binary with an alternate library search path.",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "73",
+    "questionText": "\nWhat can the Logical Volume Manager (LVM) be used for? (Choose three.)\n\n",
+    "choices": [
+      {
+        "text": "A. To create snapshots.",
+        "selected": false
+      },
+      {
+        "text": "B. To dynamically change the size of logical volumes.",
+        "selected": false
+      },
+      {
+        "text": "C. To dynamically create or delete logical volumes.",
+        "selected": false
+      },
+      {
+        "text": "D. To create RAID 9 arrays.",
+        "selected": false
+      },
+      {
+        "text": "E. To encrypt logical volumes.",
+        "selected": false
+      }
+    ],
+    "answer": "ABC",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "74",
+    "questionText": "\nWhat are the main differences between GPT and MBR partition tables regarding maximum number\nand size of partitions? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. MBR can handle partition sizes up to 4 TB, whereas GPT supports partition sizes up to 128 ZB.",
+        "selected": false
+      },
+      {
+        "text": "B. By default, GPT can manage up to 128 partitions while MBR only supports four primary partitions.",
+        "selected": false
+      },
+      {
+        "text": "C. By default, GPT can manage up to 64 partitions while MBR only supports 16 primary partitions.",
+        "selected": false
+      },
+      {
+        "text": "D. MBR can handle partition sizes up to 2.2 TB, whereas GPT supports sizes up to 9.4 ZB.",
+        "selected": false
+      },
+      {
+        "text": "E. Both GPT and MBR support up to four primary partitions, each with up to 4096 TB.",
+        "selected": false
+      }
+    ],
+    "answer": "BD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "75",
+    "questionText": "\nA backup software heavily uses hard links between files which have not been changed in between two\nbackup runs.\nWhich benefits are realized due to these hard links? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. The old backups can be moved to slow backup media, such as tapes, while still serving as hard link target in new backups.",
+        "selected": false
+      },
+      {
+        "text": "B. The backup runs faster because hard links are asynchronous operations, postponing the copy operation to a later point in time.",
+        "selected": false
+      },
+      {
+        "text": "C. The backup is guaranteed to be uncharged because a hard linked file cannot be modified after its creation.",
+        "selected": false
+      },
+      {
+        "text": "D. The backup consumes less space because the hard links point to the same data on disk instead of storing redundant copies.",
+        "selected": false
+      },
+      {
+        "text": "E. The backup runs faster because, instead of copying the data of each file, hard links only change file system meta data.",
+        "selected": false
+      }
+    ],
+    "answer": "DE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "76",
+    "questionText": "\nWhich file from the /proc/ filesystem contains a list of all currently mounted devices? (Specify the full\nname of the file, including path.)\n\n",
+    "choices": [],
+    "answer": "/proc/mounts",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "77",
+    "questionText": "\nHow many fields are in a syntactically correct line of /etc/fstab?\n\n",
+    "choices": [
+      {
+        "text": "A. 3",
+        "selected": false
+      },
+      {
+        "text": "B. 4",
+        "selected": false
+      },
+      {
+        "text": "C. 5",
+        "selected": false
+      },
+      {
+        "text": "D. 6",
+        "selected": false
+      },
+      {
+        "text": "E. 7",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "78",
+    "questionText": "\nRunning chmod 640 filea.txt as a regular user doesn’t update filea.txt’s permission.\nWhat might be a reason why chmod cannot modify the permissions? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. filea.txt is owned by another user and a regular user cannot change the permissions of another user’s file.",
+        "selected": false
+      },
+      {
+        "text": "B. filea.txt is a symbolic link whose permissions are a fixed value which cannot be changed.",
+        "selected": false
+      },
+      {
+        "text": "C. filea.txt has the sticky bit set and a regular user cannot remove this permission.",
+        "selected": false
+      },
+      {
+        "text": "D. filea.txt is a hard link whose permissions are inherited from the target and cannot be set directly.",
+        "selected": false
+      },
+      {
+        "text": "E. filea.txt has the SetUID bit set which imposes the restriction that only the root user can make changes to the file.",
+        "selected": false
+      }
+    ],
+    "answer": "AB",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "79",
+    "questionText": "\nWhich of the following Linux filesystems preallocate a fixed number of inodes when creating a new\nfilesystem instead of generating them as needed? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. JFS",
+        "selected": false
+      },
+      {
+        "text": "B. ext3",
+        "selected": false
+      },
+      {
+        "text": "C. XFS",
+        "selected": false
+      },
+      {
+        "text": "D. ext2",
+        "selected": false
+      },
+      {
+        "text": "E. procfs",
+        "selected": false
+      }
+    ],
+    "answer": "BD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "80",
+    "questionText": "\nWhich of the following commands sets the SetUID permission on the executable /bin/foo?\n\n",
+    "choices": [
+      {
+        "text": "A. chmod 4755 /bin/foo",
+        "selected": false
+      },
+      {
+        "text": "B. chmod 1755 /bin/foo",
+        "selected": false
+      },
+      {
+        "text": "C. chmod u-s /bin/foo",
+        "selected": false
+      },
+      {
+        "text": "D. chmod 755+s /bin/foo",
+        "selected": false
+      },
+      {
+        "text": "E. chmod 2755 /bin/foo",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "81",
+    "questionText": "\nWhich of the following commands can be used to display the inode number of a given file? (Choose\ntwo.)\n\n",
+    "choices": [
+      {
+        "text": "A. inode",
+        "selected": false
+      },
+      {
+        "text": "B. ln",
+        "selected": false
+      },
+      {
+        "text": "C. ls",
+        "selected": false
+      },
+      {
+        "text": "D. cp",
+        "selected": false
+      },
+      {
+        "text": "E. stat",
+        "selected": false
+      }
+    ],
+    "answer": "CE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "82",
+    "questionText": "\nWhich of the following settings for umask ensures that new files have the default permissions -rw-r-----?\n\n",
+    "choices": [
+      {
+        "text": "A. 0017",
+        "selected": false
+      },
+      {
+        "text": "B. 0640",
+        "selected": false
+      },
+      {
+        "text": "C. 0038",
+        "selected": false
+      },
+      {
+        "text": "D. 0227",
+        "selected": false
+      },
+      {
+        "text": "E. 0027",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "83",
+    "questionText": "\nAfter a power outage, the XFS file system of /dev/sda3 is inconsistent.\nHow can the existing file system errors be fixed?\n\n",
+    "choices": [
+      {
+        "text": "A. By using mount -f to force a mount of the file system",
+        "selected": false
+      },
+      {
+        "text": "B. By running xfsck on the file system",
+        "selected": false
+      },
+      {
+        "text": "C. By mounting the file system with the option xfs_repair",
+        "selected": false
+      },
+      {
+        "text": "D. By running xfsadmin repairon the file system",
+        "selected": false
+      },
+      {
+        "text": "E. By running xfs_repair on the file system",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "84",
+    "questionText": "\nWhich of the following properties of an existing file changes when a hard link pointing to that file is\ncreated?\n\n",
+    "choices": [
+      {
+        "text": "A. File size",
+        "selected": false
+      },
+      {
+        "text": "B. Link count",
+        "selected": false
+      },
+      {
+        "text": "C. Modify timestamp",
+        "selected": false
+      },
+      {
+        "text": "D. Inode number",
+        "selected": false
+      },
+      {
+        "text": "E. Permissions",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "85",
+    "questionText": "\nFollowing the Filesystem Hierarchy Standard (FHS), where should binaries that have been compiled by\nthe system administrator be placed in order to be made available to all users on the system? (Specify the\nfull path to the directory.)\n\n",
+    "choices": [],
+    "answer": "/usr/local/bin",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "86",
+    "questionText": "\nWhich of the following commands show how the shell handles a specific command?\n\n",
+    "choices": [
+      {
+        "text": "A. where",
+        "selected": false
+      },
+      {
+        "text": "B. type",
+        "selected": false
+      },
+      {
+        "text": "C. stat",
+        "selected": false
+      },
+      {
+        "text": "D. case",
+        "selected": false
+      },
+      {
+        "text": "E. fileinfo",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "87",
+    "questionText": "\nWhen in Normal mode in vi, which character can be used to begin a reverse search of the text?\n\n",
+    "choices": [
+      {
+        "text": "A. r",
+        "selected": false
+      },
+      {
+        "text": "B. /",
+        "selected": false
+      },
+      {
+        "text": "C. F",
+        "selected": false
+      },
+      {
+        "text": "D. ?",
+        "selected": false
+      },
+      {
+        "text": "E. s",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "88",
+    "questionText": "\nWhich of the following commands displays the manual page command from section 1?\n\n",
+    "choices": [
+      {
+        "text": "A. man command(1)",
+        "selected": false
+      },
+      {
+        "text": "B. man command@1",
+        "selected": false
+      },
+      {
+        "text": "C. man 1 command",
+        "selected": false
+      },
+      {
+        "text": "D. man 1.command",
+        "selected": false
+      },
+      {
+        "text": "E. man -s 1 command",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "89",
+    "questionText": "\nWhich of the following commands creates or, in case it already exists, overwrites a file called data with\nthe output of ls?\n\n",
+    "choices": [
+      {
+        "text": "A. ls 3> data",
+        "selected": false
+      },
+      {
+        "text": "B. ls >& data",
+        "selected": false
+      },
+      {
+        "text": "C. ls > data",
+        "selected": false
+      },
+      {
+        "text": "D. ls >> data",
+        "selected": false
+      },
+      {
+        "text": "E. ls >>> data",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "90",
+    "questionText": "\nWhich of the following commands is used to change options and positional parameters within a\nrunning Bash shell?\n\n",
+    "choices": [
+      {
+        "text": "A. history",
+        "selected": false
+      },
+      {
+        "text": "B. setsh",
+        "selected": false
+      },
+      {
+        "text": "C. bashconf",
+        "selected": false
+      },
+      {
+        "text": "D. set",
+        "selected": false
+      },
+      {
+        "text": "E. envsetup",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "91",
+    "questionText": "\nWhich of the following commands display the IDs of all processes owned by root? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. pgrep -c root",
+        "selected": false
+      },
+      {
+        "text": "B. pgrep -u root",
+        "selected": false
+      },
+      {
+        "text": "C. pgrep -f root",
+        "selected": false
+      },
+      {
+        "text": "D. pgrep -U 0",
+        "selected": false
+      },
+      {
+        "text": "E. pgrep -c 0",
+        "selected": false
+      }
+    ],
+    "answer": "BD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "92",
+    "questionText": "\nWhich of the following sequences in the vi editor saves the opened document and exits the editor?\n(Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. Ctrl XX",
+        "selected": false
+      },
+      {
+        "text": "B. Ctrl :W",
+        "selected": false
+      },
+      {
+        "text": "C. Esc zz",
+        "selected": false
+      },
+      {
+        "text": "D. Esc :wq",
+        "selected": false
+      },
+      {
+        "text": "E. Esc ZZ",
+        "selected": false
+      }
+    ],
+    "answer": "DE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "93",
+    "questionText": "\nWhat is the effect of the -v option for the grep command?\n\n",
+    "choices": [
+      {
+        "text": "A. It enables color to highlight matching parts.",
+        "selected": false
+      },
+      {
+        "text": "B. It shows the command’s version information.",
+        "selected": false
+      },
+      {
+        "text": "C. It only outputs non-matching lines.",
+        "selected": false
+      },
+      {
+        "text": "D. It changes the output order showing the last matching line first.",
+        "selected": false
+      },
+      {
+        "text": "E. It outputs all lines and prefixes matching lines with a+.",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "94",
+    "questionText": "\nWhich of the following tools can show the complete path of an executable file that the current shell\nwould execute when starting a command without specifying its complete path? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. find",
+        "selected": false
+      },
+      {
+        "text": "B. pwd",
+        "selected": false
+      },
+      {
+        "text": "C. which",
+        "selected": false
+      },
+      {
+        "text": "D. locate",
+        "selected": false
+      },
+      {
+        "text": "E. type",
+        "selected": false
+      }
+    ],
+    "answer": "CE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "95",
+    "questionText": "\nWhich of the following signals is sent to a process when the key combination Ctrl+Z is pressed on the\nkeyboard?\n\n",
+    "choices": [
+      {
+        "text": "A. SIGTERM",
+        "selected": false
+      },
+      {
+        "text": "B. SIGCONT",
+        "selected": false
+      },
+      {
+        "text": "C. SIGSTOP",
+        "selected": false
+      },
+      {
+        "text": "D. SIGKILL",
+        "selected": false
+      },
+      {
+        "text": "E. SIGINT",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "96",
+    "questionText": "\nWhat is the output when the regular expression 's/[ABC][abc]/xx/' is applied to the following string?\n ABCabc\n\n",
+    "choices": [
+      {
+        "text": "A. ABxxbc",
+        "selected": false
+      },
+      {
+        "text": "B. xxCxxc",
+        "selected": false
+      },
+      {
+        "text": "C. xxxxxx",
+        "selected": false
+      },
+      {
+        "text": "D. ABCabc",
+        "selected": false
+      },
+      {
+        "text": "E. Axxaxx",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "97",
+    "questionText": "\nWhich of the following commands print the current working directory when using a Bash shell?\n(Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. echo \"${PWD}\"",
+        "selected": false
+      },
+      {
+        "text": "B. echo \"${WD}\"",
+        "selected": false
+      },
+      {
+        "text": "C. printwd",
+        "selected": false
+      },
+      {
+        "text": "D. pwd",
+        "selected": false
+      },
+      {
+        "text": "E. echo \"${pwd}\"",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "98",
+    "questionText": "\nWhich of the following commands outputs test to the shell?\n++++++++++++++++++++++++++++++++++++++++++++++++++\n  test\n  EOT\n\n",
+    "choices": [
+      {
+        "text": "A.  cat <!EOT",
+        "selected": false
+      },
+      {
+        "text": "B.  cat <|EOT",
+        "selected": false
+      },
+      {
+        "text": "C.  cat !<EOT",
+        "selected": false
+      },
+      {
+        "text": "D.  cat &<EOT",
+        "selected": false
+      },
+      {
+        "text": "E.  cat <<EOT",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "99",
+    "questionText": "\nWhat is the default nice level when a process is started using the nice command?\n\n",
+    "choices": [
+      {
+        "text": "A. -10",
+        "selected": false
+      },
+      {
+        "text": "B. 0",
+        "selected": false
+      },
+      {
+        "text": "C. 10",
+        "selected": false
+      },
+      {
+        "text": "D. 15",
+        "selected": false
+      },
+      {
+        "text": "E. 20",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "100",
+    "questionText": "\nA user accidentally created the subdirectory \\dir in his home directory.\nWhich of the following commands will remove that directory?\n\n",
+    "choices": [
+      {
+        "text": "A. rmdir ~/\\\\dir",
+        "selected": false
+      },
+      {
+        "text": "B. rmdir \"~/\\dir\"",
+        "selected": false
+      },
+      {
+        "text": "C. rmdir ~/’dir’",
+        "selected": false
+      },
+      {
+        "text": "D. rmdir ~/\\dir",
+        "selected": false
+      },
+      {
+        "text": "E. rmdir '~/\\dir’",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "101",
+    "questionText": "\nWhich of the following commands can perform searches on file contents using regular expressions?\n\n",
+    "choices": [
+      {
+        "text": "A. find",
+        "selected": false
+      },
+      {
+        "text": "B. locate",
+        "selected": false
+      },
+      {
+        "text": "C. grep",
+        "selected": false
+      },
+      {
+        "text": "D. reggrep",
+        "selected": false
+      },
+      {
+        "text": "E. pgrep",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "102",
+    "questionText": "\nIn a nested directory structure, which find command line option would be used to restrict the\ncommand to searching down a particular number of subdirectories?\n\n",
+    "choices": [
+      {
+        "text": "A. -maxdepth",
+        "selected": false
+      },
+      {
+        "text": "B. -dirmax",
+        "selected": false
+      },
+      {
+        "text": "C. -maxlevels",
+        "selected": false
+      },
+      {
+        "text": "D. -s",
+        "selected": false
+      },
+      {
+        "text": "E. -n",
+        "selected": false
+      }
+    ],
+    "answer": "A",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "103",
+    "questionText": "\nWhich of the following commands determines a file’s format by using a definition database file which\ncontains information about all common file types?\n\n",
+    "choices": [
+      {
+        "text": "A. type",
+        "selected": false
+      },
+      {
+        "text": "B. file",
+        "selected": false
+      },
+      {
+        "text": "C. magic",
+        "selected": false
+      },
+      {
+        "text": "D. pmagic",
+        "selected": false
+      },
+      {
+        "text": "E. hash",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "104",
+    "questionText": "\nWhich of the following commands generates a list of user names from /etc/passwd along with their\nlogin shell?\n\n",
+    "choices": [
+      {
+        "text": "A. column -s : 1,7 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "B. chop -c 1,7 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "C. colrm 1,7 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "D. sort -t: -k1,7 /etc/passwd",
+        "selected": false
+      },
+      {
+        "text": "E. cut -d: -f1,7 /etc/passwd",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "105",
+    "questionText": "\nIf the gzip compressed tar archive texts.tgz contains the files a.txt and b.txt, which files will be present\nin the current directory after running gunzip texts.tgz?\n\n",
+    "choices": [
+      {
+        "text": "A. Only a.txt, b.txt, and texts.tgz",
+        "selected": false
+      },
+      {
+        "text": "B. Only texts.tar and texts.tgz",
+        "selected": false
+      },
+      {
+        "text": "C. Only a.txt.gz and b.txt.gz",
+        "selected": false
+      },
+      {
+        "text": "D. Only a.txt and b.txt",
+        "selected": false
+      },
+      {
+        "text": "E. Only texts.tar",
+        "selected": false
+      }
+    ],
+    "answer": "E",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "106",
+    "questionText": "\nIn the vi editor, how can commands such as moving the cursor or copying lines into the buffer be\nissued multiple times or applied to multiple rows?\n\n",
+    "choices": [
+      {
+        "text": "A. By using the command :repeat followed by the number and the command",
+        "selected": false
+      },
+      {
+        "text": "B. By specifying the number right in front of a command such as 4l or 2yj.",
+        "selected": false
+      },
+      {
+        "text": "C. By selecting all affected lines using the shit and cursor keys before applying the command.",
+        "selected": false
+      },
+      {
+        "text": "D. By issuing a command such as :set repetition=4 with repeats every subsequent command 4 times.",
+        "selected": false
+      },
+      {
+        "text": "E. By specifying the number after a command such as l4 or yj2 followed by escape.",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "107",
+    "questionText": "\nWhich of the following statements is correct for a command ending with an & character?\n\n",
+    "choices": [
+      {
+        "text": "A. The command’s output is redirected to /dev/null.",
+        "selected": false
+      },
+      {
+        "text": "B. The command is run in background of the current shell.",
+        "selected": false
+      },
+      {
+        "text": "C. The command’s output is executed by the shell.",
+        "selected": false
+      },
+      {
+        "text": "D. The command is run as a direct child of the init process.",
+        "selected": false
+      },
+      {
+        "text": "E. The command’s input is read from /dev/null.",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "108",
+    "questionText": "\nWhich of the following commands reads a file and creates separate chunks of a given size from the\nfile’s contents?\n\n",
+    "choices": [
+      {
+        "text": "A. ar",
+        "selected": false
+      },
+      {
+        "text": "B. cat",
+        "selected": false
+      },
+      {
+        "text": "C. break",
+        "selected": false
+      },
+      {
+        "text": "D. split",
+        "selected": false
+      },
+      {
+        "text": "E. parted",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "109",
+    "questionText": "\nWhat is the purpose of the xargs command?\n\n",
+    "choices": [
+      {
+        "text": "A. It passes arguments to an X server.",
+        "selected": false
+      },
+      {
+        "text": "B. It repeats the execution of a command using different parameters for each invocation.",
+        "selected": false
+      },
+      {
+        "text": "C. It reads standard input and builds up commands to execute.",
+        "selected": false
+      },
+      {
+        "text": "D. It asks a question, graphically, and returns the answer to the shell.",
+        "selected": false
+      },
+      {
+        "text": "E. It allows specifying long options (like --help) for commands that normally only accept short options (like -h)",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "110",
+    "questionText": "\nWhich command displays a list of all background tasks running in the current shell? (Specify ONLY the\ncommand without any path or parameters.)\n\n",
+    "choices": [],
+    "answer": "jobs",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "111",
+    "questionText": "\nWhich command is used to change the priority of an already running process? (Specify ONLY the\ncommand without any path or parameters.)\n\n",
+    "choices": [],
+    "answer": "renice",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "112",
+    "questionText": "\nIn Bash, inserting 1>&2 after a command redirects…\n\n",
+    "choices": [
+      {
+        "text": "A. …standard error to standard input.",
+        "selected": false
+      },
+      {
+        "text": "B. …standard output to standard error.",
+        "selected": false
+      },
+      {
+        "text": "C. …standard input to standard error.",
+        "selected": false
+      },
+      {
+        "text": "D. …standard error to standard output.",
+        "selected": false
+      },
+      {
+        "text": "E. …standard output to standard input.",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "113",
+    "questionText": "\nWhen booting from the hard disk, a computer successfully loads the Linux kernel and initramfs but\nhangs during the subsequent startup tasks. The system is booted using a Linux based rescue CD to\ninvestigate the problem.\nWhich of the following methods helps to identify the root cause of the problem?\n\n",
+    "choices": [
+      {
+        "text": "A. Using the dmesg command from the rescue CD’s shell to view the original system’s boot logs.",
+        "selected": false
+      },
+      {
+        "text": "B. Investigating the file /proc/kmsg on the computer’s hard disk for possible errors.",
+        "selected": false
+      },
+      {
+        "text": "C. Investigating the files in /var/log on the computer’s hard disk for possible errors.",
+        "selected": false
+      },
+      {
+        "text": "D. Using chroot to switch to the file system on the hard disk and use dmesg to view the logs.",
+        "selected": false
+      },
+      {
+        "text": "E. Rebooting again from the hard drive since the system successfully booted from the rescue CD.",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "114",
+    "questionText": "\nWhere is the bootloader stored on the hard disk of a UEFI system?\n\n",
+    "choices": [
+      {
+        "text": "A. In the EFI Boot Record (EBR).",
+        "selected": false
+      },
+      {
+        "text": "B. In the Master Boot Record (MBR).",
+        "selected": false
+      },
+      {
+        "text": "C. On the EFI System Partition (ESP).",
+        "selected": false
+      },
+      {
+        "text": "D. On the partition labeled boot.",
+        "selected": false
+      },
+      {
+        "text": "E. On the partition number 127.",
+        "selected": false
+      }
+    ],
+    "answer": "C",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "115",
+    "questionText": "\nWhat is the correct way to set the default systemd boot target to multi-user?\n\n",
+    "choices": [
+      {
+        "text": "A. systemctl isolate multi-user.target",
+        "selected": false
+      },
+      {
+        "text": "B. systemctl set-runlevel multi-user.target",
+        "selected": false
+      },
+      {
+        "text": "C. systemctl set-boot multi-user.target",
+        "selected": false
+      },
+      {
+        "text": "D. systemctl set-default multi-user.target",
+        "selected": false
+      },
+      {
+        "text": "E. systemctl boot -p multi-user.target",
+        "selected": false
+      }
+    ],
+    "answer": "D",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "116",
+    "questionText": "\nWhich of the following statements are correct about the initial RAM disk involved in the boot process\nof Linux? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. An initramfs is a compressed file system archive, which can be unpacked to examine its contents.",
+        "selected": false
+      },
+      {
+        "text": "B. An initramfs file contains the MBR, the bootloader and the Linux kernel.",
+        "selected": false
+      },
+      {
+        "text": "C. After a successful boot, the initramfs contents are available in /run/initramfs/.",
+        "selected": false
+      },
+      {
+        "text": "D. The kernel uses the initramfs temporarily before accessing the real root file system.",
+        "selected": false
+      },
+      {
+        "text": "E. An initramfs does not depend on a specific kernel version and is not changed after the initial installation.",
+        "selected": false
+      }
+    ],
+    "answer": "AD",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "117",
+    "questionText": "\nWhich of the following commands loads a kernel module along with any required dependency\nmodules?\n\n",
+    "choices": [
+      {
+        "text": "A. depmod",
+        "selected": false
+      },
+      {
+        "text": "B. modprobe",
+        "selected": false
+      },
+      {
+        "text": "C. module_install",
+        "selected": false
+      },
+      {
+        "text": "D. insmod",
+        "selected": false
+      },
+      {
+        "text": "E. loadmod",
+        "selected": false
+      }
+    ],
+    "answer": "B",
+    "questionType": "single"
+  },
+  {
+    "questionNumber": "118",
+    "questionText": "\nWhat information can the lspci command display about the system hardware? (Choose three.)\n\n",
+    "choices": [
+      {
+        "text": "A. System battery type",
+        "selected": false
+      },
+      {
+        "text": "B. Device IRQ settings",
+        "selected": false
+      },
+      {
+        "text": "C. PCI bus speed",
+        "selected": false
+      },
+      {
+        "text": "D. Ethernet MAC address",
+        "selected": false
+      },
+      {
+        "text": "E. Device vendor identification",
+        "selected": false
+      }
+    ],
+    "answer": "BCE",
+    "questionType": "multiple"
+  },
+  {
+    "questionNumber": "119",
+    "questionText": "\nWhich System V init configuration file is commonly used to set the default run level? (Specify the full\nname of the file, including path.)\n\n",
+    "choices": [],
+    "answer": "/etc/inittab",
+    "questionType": "input"
+  },
+  {
+    "questionNumber": "120",
+    "questionText": "\nGiven the following two symbolic links in a System V init configuration:\n /etc/rc1.d/K01apache2\n /etc/rc2.d/S02apache2\nWhen are the scripts executed that are referenced by these links? (Choose two.)\n\n",
+    "choices": [
+      {
+        "text": "A. S02apache2 is run when runlevel 2 is entered.",
+        "selected": false
+      },
+      {
+        "text": "B. S02apache2 is run when runlevel 2 is left.",
+        "selected": false
+      },
+      {
+        "text": "C. K01apache2 is never run because K indicates a deactivated service.",
+        "selected": false
+      },
+      {
+        "text": "D. Both S02apache2 and K01apache2 are run during a system shutdown.",
+        "selected": false
+      },
+      {
+        "text": "E. K01apache2 is run when runlevel 1 is entered.",
+        "selected": false
+      }
+    ],
+    "answer": "AE",
+    "questionType": "multiple"
+  }
+]

@@ -1,0 +1,43 @@
+        <!-- Begin -->
+<div class="questions-section">
+        <div class="question-container">
+          <div class="question-block" *ngIf="getQuestionNav().getCurrentQuestion()">
+
+            <h3>Question {{ getTrueFalse().getCurrentQuestionIndex() + 1 }}</h3>
+
+            <div class="question-text">{{ getQuestionNav().getCurrentQuestion().questionText }}</div>
+
+          <div class="choice-text">
+            <LL-single-choice-question
+              *ngIf="getQuestionNav().getCurrentQuestion().questionType === 'single'"
+              [choices]="getQuestionNav().getCurrentQuestion().choices"
+              (choiceSelectionToggle)="toggleChoiceSelectionSingle($event)"
+            ></LL-single-choice-question>
+
+            <LL-multiple-choice-question
+              *ngIf="getQuestionNav().getCurrentQuestion().questionType === 'multiple'"
+              [choices]="getQuestionNav().getCurrentQuestion().choices"
+              (choiceSelectionToggle)="toggleChoiceSelectionMulti($event)"
+            ></LL-multiple-choice-question>
+
+            <LL-input-choice-question
+              *ngIf="getQuestionNav().getCurrentQuestion().questionType === 'input'"
+              [userAnswer]="getTrueFalse().getCurrentAnswers().userAnswer"
+              (userAnswerChange)="toggleInputAnswer($event)"
+            ></LL-input-choice-question>
+          </div>
+
+        </div>
+
+      <!-- Question Navigation -->
+<div class="button-container">
+  <button *ngIf="!getQuestionNav().thisIsLastQuestion()" (click)="getQuestionNav().movePreviusQuestion()">Back</button>
+  <button *ngIf="!getQuestionNav().thisIsLastQuestion()" (click)="getQuestionNav().moveNextQuestionCheckMode()">Forward</button>
+  <button *ngIf="getQuestionNav().thisIsLastQuestion()" (click)="getQuestionNav().endExam()">Finish</button>
+</div>
+
+<div class="button-container">
+  <button *ngIf="!getQuestionNav().thisIsLastQuestion()" (click)="getQuestionNav().skipQuestion()">Skip</button>
+</div>
+
+</div>
