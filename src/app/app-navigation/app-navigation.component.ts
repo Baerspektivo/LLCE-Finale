@@ -24,9 +24,7 @@ export class AppNavigationComponent {
     if (this.subMenus[menuName]) {
       this.router.navigateByUrl('/home'); // Hier wird zur "Home"-Seite navigiert
       for (const key in this.subMenus) {
-        if (key !== menuName) {
           this.subMenus[key] = false; // Zurücksetzen aller anderen Untermenüs
-        }
       }
     } else {
       this.subMenus[menuName] = !this.subMenus[menuName];

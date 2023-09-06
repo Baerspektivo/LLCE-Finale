@@ -1,19 +1,18 @@
-<h2>{{privacyPolicy.german}}</h2>
 <div>
-  <ng-container *ngIf="currentLanguage === 'german'; else englishContent">
-    <p>{{privacyPolicy.german.introduction}}</p>
-    <p>{{privacyPolicy.german.dataController}}</p>
-    <p>{{privacyPolicy.german.dataTypes}}</p>
-    <p>{{privacyPolicy.german.dataProcessingPurpose}}</p>
-    <p>{{privacyPolicy.german.legalBases}}</p>
-    <p>{{privacyPolicy.german.dataDeletion}}</p>
-    <p>{{privacyPolicy.german.userRights}}</p>
-    <p>{{privacyPolicy.german.objectionRight}}</p>
-    <p>{{privacyPolicy.german.complaintRight}}</p>
-    <p>{{privacyPolicy.german.introduction}}</p>
-    <p>{{privacyPolicy.german.lastUpdated}}</p>
-  </ng-container>
+  <button class="show-answer-button" (click)="changeLanguage('german')">Deutsch</button>
+  <button class="show-answer-button" (click)="changeLanguage('english')">English</button>
+</div>
+<div>
+  <h2>{{privacyPolicy[currentLanguage].introduction}}</h2>
+  <p>{{privacyPolicy[currentLanguage].dataController}}</p>
+  <p>{{privacyPolicy[currentLanguage].dataTypes}}</p>
+  <p>{{privacyPolicy[currentLanguage].dataProcessingPurpose}}</p>
+  <p>{{privacyPolicy[currentLanguage].legalBases}}</p>
+  <p>{{privacyPolicy[currentLanguage].dataDeletion}}</p>
+  <p>{{privacyPolicy[currentLanguage].userRights}}</p>
+  <p>{{privacyPolicy[currentLanguage].objectionRight}}</p>
+  <p>{{privacyPolicy[currentLanguage].complaintRight}}</p>
+  <p>{{privacyPolicy[currentLanguage].changes}}</p>
+  <p>{{privacyPolicy[currentLanguage].lastUpdated}}</p>
 </div>
 
-<button (click)="changeLanguage('german')">Deutsch</button>
-<button (click)="changeLanguage('english')">English</button>

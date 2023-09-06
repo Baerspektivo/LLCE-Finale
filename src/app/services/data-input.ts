@@ -13,11 +13,6 @@ export class DataInput {
   private katalog1Url = 'assets/LPI-2019-1-101d-QA.json';
   private katalog2Url = 'assets/LPI-2019-1-102d-QA.json';
 
-  getPrivacyPolicy(language: string): Observable<any>{
-    const url = `assats/PrivacyPolicy${language}.json`
-    return this.http.get(url);
-  }
-
   getQuestion1(): Observable<Question[]> {
     return this.http.get<Question[]>(this.katalog1Url);
   }
@@ -42,5 +37,4 @@ export class DataInput {
       map(([question1,question2]) => [...question1, ...question2])
     );
   }
-
 }

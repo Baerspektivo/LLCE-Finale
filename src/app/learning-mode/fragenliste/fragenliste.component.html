@@ -3,8 +3,6 @@
     <button class="show-answer-button" mat-button (click)="navigateToFilterPage()">Filter Questions</button>
   </div>
 
-
-
   <div class="question-container">
     <div class="question-block" *ngFor="let question of getKatalog(); let i = index">
       <h3>Question {{i+1}}</h3>
