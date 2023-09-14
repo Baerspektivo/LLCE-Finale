@@ -1,6 +1,10 @@
 
 <div class="cookie-banner" *ngIf="!hasConsent()">
-  <span>Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern. Bitte akzeptieren Sie die Verwendung von Cookies.</span>
-  <a href="/privacy">Datenschutzerklärung</a>
-  <button (click)="giveConsent()">Accept</button>
+  <span>This website uses cookies to enhance your experience. Please accept the use of cookies.</span>
+  <div>
+    <a href="/privacy">Privacy Policy</a>
+  </div>
+  <div>
+    <button (click)="giveConsent()">Accept</button>
+  </div>
 </div>

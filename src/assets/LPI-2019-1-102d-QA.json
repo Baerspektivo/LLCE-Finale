@@ -2192,7 +2192,7 @@
   },
   {
     "questionNumber": "92",
-    "questionText": "\nWhat is true about the following command?\n  nmcli device wifi connect WIFIoI\n\nExplanation:: \n    centos 7 man page zu nmcli:\n\t\t\twifi connect (B)SSID [password password] [wep-key-type {key | phrase}] [ifname ifname] \n\t\t\t\t\t\t\t\t\t\t[bssid BSSID] [name name] [private {yes | no}] [hidden {yes | no}]\n           Connect to a Wi-Fi network specified by SSID or BSSID. \n\n\t\t\t  The command finds a matching connection \n\t\t\t\t\t\t\tor \n\t\t=>=> creates one and then activates it on a device. \n\n\t\t\t  This is a command-line counterpart of clicking an SSID in a GUI client. If a connection \n\t\t\t  for the network already exists, it is possible to bring up (activate) the existing profile \n\t\t\t  as follows: nmcli con up id name. \n\t\t=>=> Note that only open, WEP and WPA-PSK networks are supported \n\t\t\t\t\tif no previous connection exists. \n\t\t\t\t\tIt is also assumed that IP configuration is obtained via DHCP.\n\n\tdemnach ist Antwort C hier richtig, sollte es noch nicht bekannt, aber existieren!\n\tIst das Wifi Netzwerk mit Passwort geschützt muß diese dann dazu angegeben werden,\n\twobei dies beim Ausführen des Kommandos als User angefragt wird. Insofern muss man \n   das Passwort auch nicht dem Kommando mitgeben. Angelegt wird tatsächlich eine \n   entsprechende Komfigurationsdatei mit zugeordnete Keydatei und das Interface aktiviert!\n    \n   Vormals alte, als richtig erachtete Antwort:\n    bezogen auf die gegebene Fragestellung und der gegebenen Anworten\n\t ist nur D richtig!\n    wenn WIFIoI nicht existiert => error!\n\n    wenn WIFIoI existiert, man könnte vermuten \n    das C richtig wäre, da dieses Kommando auch eine entsprechende \n    Konfigurationsdatei anlegt! - AP muss also existieren und es wird \n    auch die Aktivierung der Verbindung versucht. Da aber z.B. kein Passwort\n    angegeben ist, ist es sehr fraglich, wie eigentlich der AP\n\t konfiguriert ist. In der Regel ist die Aktivierung daher nicht möglich,\n    daher C = falsch.\n\n   Ergänzung, warum aber C richtig ist: die Fehlermeldung gibs es nur beim Ausführen\n\t\t\t\t\tdes Kommandos unter root. Als User ausgeführt wird das Passwort\n\t\t\t\t\tangefragt und bei richtigem Passwort eine Konfigurationsdatei und \n\t\t\t\t\tzugehörige Passwort (key) Datei angelegt, sowie das Interface aktiviert!\n\t \n\n",
+    "questionText": "\nWhat is true about the following command?\n  nmcli device wifi connect WIFIoI\n\n",
     "choices": [
       {
         "text": "A. NetworkManager opens a new public hotspot with the SSID WIFIoI.",
@@ -2220,7 +2220,7 @@
   },
   {
     "questionNumber": "93",
-    "questionText": "\nWhich of the commands below might have produced the following output?\n  ;; global options: +cmd\n  ;; Got answer:\n  ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14368\n  ;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n  \n  ;; OPT PSEUDOSECTION:\n  ; EDNS: version: 0, flags:; udp: 4096\n  ;; QuESTION SECTION:\n  ;www.example.org.               IN      NS\n  \n  ;; AUTHORITY SECTION:\n  example.org.            3600    IN      SOA     ns.icann.org. noc.dns.icann.org. 2019121418 7200 3600 1209600 3600\n  \n  ;; Query time: 96 msec\n  ;; SERVER: 172.21.0.9#53(172.21.0.9)\n  ;; WHEN: Di Jun 23 13:57:34 CEST 2020\n  ;; MSG SIZE  rcvd: 97\n\n\n",
+    "questionText": "\nWhich of the commands below might have produced the following output?\n ",
     "choices": [
       {
         "text": "A. dig -t mx www.example.org",
@@ -2745,7 +2745,7 @@
   },
   {
     "questionNumber": "114",
-    "questionText": "\nIf neither cron.allow nor cron.deny exist in /etc/, which of the following is true?\n\nExplanation::\n  Zunächst vermutete richtige Antwort:\n  A - aber nur für debian/ubuntu\n    debian/ubuntu etc : A - ist erlaubt\n    bei RHEL/SEL/Fedora/CentOS wäre A falsch, weil da User dann cron nicht nutzen können!\n   B ist falsch: \"root legt keine spezifischen crontabs für einen User an, wenn man \n\t\t\t\t\t\tdamit jeweils entsprechende User-Dateien meint. \n\n  Neue richtige Antwort:\n  B ist richtig:  \n  \t\tABER:\n\t\t- außer es wird die globale /etc/crontab benutzt, wo root user spezifische \n\t\t  crontab Einträge vornehmen kann, z.B für System spezifische Services, die \n\t\t  nicht unter root laufen sollen! DANN WÄRE B RICHTIG :) und dies \n\t\t  gilt für alle Linux System gleichermaßen, also keine Unterschied ob \n\t\t  Debian/Ubuntu etc. oder RHEL/SLES/Suse/Fedora/RockuLinux/Centos etc.\n\n",
+    "questionText": "\nIf neither cron.allow nor cron.deny exist in /etc/, which of the following is true?",
     "choices": [
       {
         "text": "A. Without additional configuration, all users may create user specific crontabs.",

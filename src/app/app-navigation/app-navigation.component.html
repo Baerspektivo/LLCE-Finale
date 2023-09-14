@@ -4,15 +4,15 @@
   <a routerLink="/home" routerLinkActive="active">Home</a>
   <a (click)="toggleSubMenu('learningMode')" [class.active]="isSubMenuOpen('learningMode')">Learning Mode</a>
   <div class="sub-navigation" *ngIf="subMenus['learningMode']">
-    <a (click)="toggleSubMenu('fragenliste')" [class.active]="isSubMenuOpen('fragenliste')">Fragenliste</a>
+    <a (click)="toggleSubMenu('fragenliste')" [class.active]="isSubMenuOpen('fragenliste')">Question list</a>
     <div class="sub-sub-navigation" *ngIf="subMenus['fragenliste']">
-      <a routerLink="/learning-mode/fragenliste/LPI101" routerLinkActive="active">LPI101</a>
-      <a routerLink="/learning-mode/fragenliste/LPI102" routerLinkActive="active">LPI102</a>
+      <a routerLink="/learning-mode/questionlist/LPI101" routerLinkActive="active">LPI101</a>
+      <a routerLink="/learning-mode/questionlist/LPI102" routerLinkActive="active">LPI102</a>
     </div>
-    <a (click)="toggleSubMenu('einzelfragen')" [class.active]="isSubMenuOpen('einzelfragen')">Einzelfragen</a>
+    <a (click)="toggleSubMenu('einzelfragen')" [class.active]="isSubMenuOpen('einzelfragen')">Single question</a>
     <div class="sub-sub-navigation" *ngIf="subMenus['einzelfragen']">
-      <a routerLink="/learning-mode/einzelfragen/LPI101" routerLinkActive="active">LPI101</a>
-      <a routerLink="/learning-mode/einzelfragen/LPI102" routerLinkActive="active">LPI102</a>
+      <a routerLink="/learning-mode/singlequestion/LPI101" routerLinkActive="active">LPI101</a>
+      <a routerLink="/learning-mode/singlequestion/LPI102" routerLinkActive="active">LPI102</a>
     </div>
   </div>
   <a (click)="toggleSubMenu('checkMode')" [class.active]="isSubMenuOpen('checkMode')">Check Mode</a>

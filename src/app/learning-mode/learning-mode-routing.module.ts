@@ -6,8 +6,8 @@ import { LearningModeComponent } from './learning-mode.component';
 
 const routes: Routes = [
   { path: '', component: LearningModeComponent},
-  { path: 'fragenliste/:katalog', component: FragenlisteComponent},
-  { path: 'einzelfragen/:katalog', component: EinzelfragenComponent},
+  { path: 'questionlist/:katalog', component: FragenlisteComponent},
+  { path: 'singlequestion/:katalog', component: EinzelfragenComponent},
 ];
 
 @NgModule({
