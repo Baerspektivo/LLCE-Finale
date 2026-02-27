@@ -37,13 +37,9 @@ export class FilterService {
   }
 
   filterByQuestionsTypes(questions: Question[], questionType: string): Question[] {
-    console.log(questions,'Questions');
-    console.log(this.questions,'Katalog');
 
     const filtered = questions.filter(question => question.questionType == questionType)
 
-    console.log(questionType,'Filtered');
-    console.log(filtered,'Filtered');
     return filtered;
   }
 
