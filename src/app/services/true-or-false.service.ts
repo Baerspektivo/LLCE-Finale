@@ -103,7 +103,7 @@ export class TrueOrFalesService {
             this.setKatalogAndQuestions(data);
           }),
           catchError((error) => {
-            console.log('Fehler beim Laden des Katalogs aufgetreten', error);
+            console.error('Fehler beim Laden des Katalogs aufgetreten');
             return EMPTY;
           })
         );
@@ -118,7 +118,7 @@ export class TrueOrFalesService {
           this.setKatalogAndQuestions(data);
         }),
         catchError((error) => {
-          console.log('Fehler beim laden des Katalaogs aufgetreten', error);
+          console.error('Fehler beim Laden des Katalogs aufgetreten');
           return EMPTY;
         })
       );
