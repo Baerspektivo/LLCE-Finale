@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
-
 
 @Component({
   selector: 'LL-root',
@@ -9,12 +7,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AppComponent {
 
-  constructor(
-    private cookieServ: CookieService,
-  ) {
-    this.cookieServ.set('cookieName', 'cookieValue')
-    const cookieValue = this.cookieServ.get('cookieName');
-    console.log('Cookie value', cookieValue);
+  constructor() {
   }
   //title = 'LLCE';
 }
