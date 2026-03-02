@@ -1,8 +1,7 @@
 <h2 mat-dialog-title>Statistic</h2>
 <mat-dialog-content>
-  <div [innerHTML]="formattedMessage"></div>
+  <div class="message-content">{{ data.message }}</div>
 </mat-dialog-content>
 <mat-dialog-actions>
 <button mat-button (click)="errorPopup()">OK</button>
 </mat-dialog-actions>
-
