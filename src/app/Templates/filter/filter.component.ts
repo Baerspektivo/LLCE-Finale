@@ -49,7 +49,6 @@ export class FilterComponent {
     } else if (this.selectedKatalog === 'LPI102') {
       this.filteredQuestions = this.filterService.filteredQuestionsLPI102;
     }
-    console.log('fSfQL1',this.filterService.filteredQuestionsLPI101,'fQ',this.filteredQuestions)
   }
 
   selectCatalog(katalog: string): void{
